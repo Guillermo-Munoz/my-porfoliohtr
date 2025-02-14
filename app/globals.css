@@ -2,20 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #1f1934;
+
+}
+
+.clip-hexagon {
+  clip-path: polygon(75% 0%, 92% 51%, 75% 100%, 0% 100%, 17% 52%, 0% 0%);
+}
+
+main {
+  background: #393a47;
+  height: full;
+  height: full;
+}
+
+@layer utilities {
+  .text--balance {
+    text-wrap: balance
+  }
 }
